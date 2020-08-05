@@ -7,9 +7,9 @@ public class Main {
 		ConfigParser newConfig = null;
 		if(args.length == 0) {
 			 newConfig = new ConfigParser("config.txt");
-		}else if("staging".equals(args[0])) {
+		}else if("staging".equalsIgnoreCase(args[0])) {
 			newConfig = new ConfigParser("config-staging.txt");
-		} else if("development".equals(args[0])) {
+		} else if("development".equalsIgnoreCase(args[0])) {
 			newConfig = new ConfigParser("config-dev.txt");
 		} else {
 			System.out.println("Invalid input");

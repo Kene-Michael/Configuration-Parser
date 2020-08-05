@@ -58,8 +58,6 @@ public class ConfigParser {
         } catch (NoSuchElementException | IOException e) { //catching Exceptions.
             e.printStackTrace();
         }
-
-        //System.out.println(configMap);
     }
 
     /**
