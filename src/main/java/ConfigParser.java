@@ -22,7 +22,7 @@ public class ConfigParser {
      * in such a way that they can be stored successfully in a map using keys as specified.
      * @param path
      */
-    public void configParser(Path path) {
+    private void configParser(Path path) {
         try(Scanner input = new Scanner(path)) {
             while (input.hasNextLine()) {
                 String line = input.nextLine();//reads a whole lin and stores it in a variable line.
@@ -59,7 +59,7 @@ public class ConfigParser {
             e.printStackTrace();
         }
 
-        System.out.println(configMap);
+        //System.out.println(configMap);
     }
 
     /**
