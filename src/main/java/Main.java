@@ -15,10 +15,6 @@ public class Main {
 			System.out.println("Invalid input");
 		}
 
-		System.out.println(newConfig.get("dbname"));
-		System.out.println(newConfig.get("host"));
-		System.out.println(newConfig.get("application.name"));
-		System.out.println(newConfig.get("application.port"));
 	}
 
 }
