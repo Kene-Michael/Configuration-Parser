@@ -10,9 +10,9 @@ public class ConfigParser {
     private Map<String,String> configMap = new HashMap<String, String>();
 
     public ConfigParser(String fileName) {
-        this.fileName = "src/main/java/" + fileName;
+        this.fileName = "src/main/java/" + fileName;//adding a relative path to the filename.
         File file = new File(this.fileName);
-        String filePath = file.exists() ? this.fileName : fileName;
+        String filePath = file.exists() ? this.fileName : fileName;//conditional to handle running code from terminal.
         Path path = FileSystems.getDefault().getPath(filePath);
         configParser(path);
     }
@@ -41,7 +41,6 @@ public class ConfigParser {
                                                             beginning of the first element of the array using them as key in the map*/
 
                         String key = line + arr[0];
-//                        System.out.println(Arrays.toString(arr));
                         data = input.nextLine();
                         if (configMap.containsKey(key)) {//checking if map already contains the key and if yes, just continue
                             continue;
